@@ -13,5 +13,19 @@ def letra_o (n)
     print "*" * n
 end
 
+def letra_i (n)
+    puts "\n"
+    print "*" * n
+    print "\n"
+    (n-2).times do |i|
+        print "  "
+        print "*"
+        print "  "
+        print "\n"
+    end
+    print "*" * n
+end
+
+
 puts letra_o(n)
-puts "\n"
+puts letra_i(n)
