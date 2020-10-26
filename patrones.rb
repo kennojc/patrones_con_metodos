@@ -39,7 +39,6 @@ def letra_z (n)
     print "*" * n
 end
 
-
 def letra_x (n)
     puts "\n"
     for i in (1..n) do
@@ -52,11 +51,34 @@ def letra_x (n)
         end
         print "\n"
     end 
-    puts "\n"   
+    print "\n" 
 end
+
+def numero_cero(n)
+    print "*" * n
+    print "\n"
+
+    (n-2).times do |i|
+        print '*'
+        i.times do
+         print " "
+        end
+        print '*'
+        ((n-3)-i).times do
+            print " "
+        end
+        print '*'
+        print "\n"
+    end
+   
+    print "*" * n
+    print "\n"
+end
+
 
 puts letra_o(n)
 puts letra_i(n)
 puts letra_z(n)
 puts letra_x(n)
+puts numero_cero(n)
 
