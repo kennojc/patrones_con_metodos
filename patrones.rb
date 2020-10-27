@@ -11,6 +11,7 @@ def letra_o (n)
         print "\n"
     end
     print "*" * n
+    puts "\n"
 end
 
 def letra_i (n)
@@ -23,6 +24,7 @@ def letra_i (n)
         print "\n"
     end
     print "*" * n
+    puts "\n"
 end
 
 def letra_z (n)
@@ -37,7 +39,9 @@ def letra_z (n)
         print "\n"
     end
     print "*" * n
+    puts "\n"
 end
+
 
 def letra_x (n)
     puts "\n"
@@ -75,10 +79,33 @@ def numero_cero(n)
     print "\n"
 end
 
+def navidad (n)
+    puts "\n"
+    for i in (1..(n-1)) do
+        print " " * (n-i)
+        print "* " * i
+        print "\n"
+    end
+    
+    for i in (1..(n-3)) do
+        print "  " * (n/2)
+        print "*"
+        print "\n"
+    end
+    print " "
+
+    (n-2).times do
+        print " *"
+    end
+    puts "\n"
+    
+end 
+
 
 puts letra_o(n)
 puts letra_i(n)
 puts letra_z(n)
 puts letra_x(n)
 puts numero_cero(n)
+puts navidad(n)
 
